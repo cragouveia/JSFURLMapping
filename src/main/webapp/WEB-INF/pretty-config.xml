@@ -1,0 +1,31 @@
+<pretty-config xmlns="http://ocpsoft.com/prettyfaces/3.3.0" 
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+               xsi:schemaLocation="http://ocpsoft.com/prettyfaces/3.3.0
+                                   		http://ocpsoft.com/xml/ns/prettyfaces/ocpsoft-pretty-faces-3.3.0.xsd">
+
+   <!-- Begin Example RewriteRules 
+   
+      // These are custom rewrite-rules, and are probably not necessary for your application.
+
+      <rewrite match="^/old-url/(\w+)/$" substitute="/new_url/$1/" redirect="301" />
+
+   -->
+   
+      
+      <url-mapping id="home">
+          <pattern value="/home" />
+          <view-id value="/WEB-INF/view/home.xhtml" />
+      </url-mapping>
+
+      <url-mapping id="contato">
+          <pattern value="/contato" />
+          <view-id value="/WEB-INF/view/contato.xhtml" />
+      </url-mapping>
+
+      <url-mapping id="admin">
+          <pattern value="/admin" />
+          <view-id value="/WEB-INF/view/admin.xhtml" />
+      </url-mapping>
+
+
+</pretty-config>
